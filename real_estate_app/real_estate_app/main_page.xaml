@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="real_estate_app.main_page">
+
+        <StackLayout Padding="0" BackgroundColor="White">
+                     
+            <Grid>
+                <StackLayout Padding="0" Margin="0">
+                <Frame BackgroundColor="#10ac84" HeightRequest="280" HorizontalOptions="FillAndExpand" Padding="0">
+                    <Image Source="login_img" Aspect="AspectFill" Margin="0"/>
+                </Frame>
+                    
+                
+                    
+                    
+                </StackLayout>
+
+                <StackLayout Margin="15,180,15,0">
+                <Frame BackgroundColor="White" HasShadow="True" HeightRequest="390" BorderColor="#10ac84" HorizontalOptions="FillAndExpand">
+                        <StackLayout>
+                                <StackLayout HorizontalOptions="CenterAndExpand">
+                                    <Label Text="SIGN IN" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                                </StackLayout>
+
+                                <StackLayout Margin="0,25,0,0">
+
+
+                                    <Frame BackgroundColor="White" BorderColor="DarkGray" CornerRadius="50"  HorizontalOptions="FillAndExpand" Padding="0" Margin="0">
+                                        <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="#10ac84" CornerRadius="50" WidthRequest="35" HeightRequest="35" Padding="0" Margin="7,7,0,7" HorizontalOptions="Start">
+
+                                            </Frame>
+                                    <Entry Placeholder="Email" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0" ></Entry>
+                                </StackLayout>
+                                    </Frame>
+
+                                    <Frame BackgroundColor="White" BorderColor="DarkGray" CornerRadius="50"  HorizontalOptions="FillAndExpand" Padding="0" Margin="0">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Frame BackgroundColor="#10ac84" CornerRadius="50"  WidthRequest="35" HeightRequest="35" Padding="0" Margin="7,7,0,7" HorizontalOptions="Start">
+
+                                            </Frame>
+                                            <Entry Placeholder="Password" TextColor="Black" HorizontalOptions="FillAndExpand" Margin="0,0,15,0">
+
+                                            </Entry>
+
+
+
+                                        </StackLayout>
+                                    </Frame>
+
+
+                                </StackLayout>
+                            
+                                <StackLayout Orientation="Horizontal">
+                                    <CheckBox IsChecked="False" Color="#10ac84" />
+                                    <Label Text="Remember Me" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                    <Label Text="Forgot Password" HorizontalTextAlignment="End" TextColor="#10ac84" VerticalTextAlignment="Center"  HorizontalOptions="EndAndExpand" FontAttributes="Bold"/>
+
+                                </StackLayout>
+
+                            <Button Text="Sign In" BackgroundColor="#10ac84" TextColor="White" FontAttributes="Bold" CornerRadius="20"/>
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Label Text="Are you not a member ?" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+
+                                <Label Text="Sign up" HorizontalTextAlignment="End" TextColor="#10ac84" VerticalTextAlignment="Center" HorizontalOptions="Center" FontAttributes="Bold">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer x:Name="RegisterTap" Tapped="RegisterTap_Tapped">
+                                        </TapGestureRecognizer>
+                                    </Label.GestureRecognizers>
+                                </Label>
+
+                            </StackLayout>
+
+                            <StackLayout>
+                                <Grid>
+                                    <BoxView HeightRequest="1" Margin="25" HorizontalOptions="CenterAndExpand" WidthRequest="130" BackgroundColor="DarkGray" />
+                                    <Frame BackgroundColor="White" WidthRequest="50" Padding="0" Margin="0" HeightRequest="50" HasShadow="False" VerticalOptions="Center" BorderColor="DarkGray" CornerRadius="30" HorizontalOptions="CenterAndExpand">
+                                        <Label Text="Or" FontSize="Small" TextColor="DarkGray" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                                    </Frame>
+                                </Grid>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Frame BackgroundColor="White" WidthRequest="50" Padding="0" Margin="0" HeightRequest="50" HasShadow="False" VerticalOptions="Center" CornerRadius="30" HorizontalOptions="CenterAndExpand">
+                                <Image Source="fb" Aspect="AspectFill" Margin="0"/>
+                            </Frame>
+
+                                <Frame BackgroundColor="DarkGray" WidthRequest="45" Padding="0" Margin="0" HeightRequest="45" HasShadow="False" VerticalOptions="Center" CornerRadius="30" HorizontalOptions="CenterAndExpand">
+                                    <Image Source="google.png" Aspect="AspectFill" Margin="0"/>
+                                </Frame>
+                            </StackLayout>
+                            
+                        </StackLayout>
+                    
+                    
+                    
+                            
+                    
+                    </Frame>
+                </StackLayout>
+            </Grid>
+            
+        </StackLayout>
+
+</ContentPage>
